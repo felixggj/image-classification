@@ -1,0 +1,18 @@
+name: tf-metal
+channels:
+  - apple
+  - conda-forge
+dependencies:
+  - python=3.10.0  
+  - pip
+  - tensorflow-deps
+  - ipykernel # Comment if not using jupyter
+  - matplotlib
+  - opencv-python
+
+  # PyPI packages
+  - pip:
+    - tensorflow-macos==2.9
+    - tensorflow-metal==0.5  
+    
+  # For Silicon ARM-based Macs only -> subject to change -> 2.9 for macos and 0.5 for metal works perfectly as of December '22
