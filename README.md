@@ -15,7 +15,7 @@ The Model is able to predict whether a person is sad or happy from any image tha
 	- OpenCV
 ##### Local Computer - Silicon ARM Mac (recommended)
 - Download <a href="https://docs.conda.io/en/main/miniconda.html">Miniconda</a>
-- Create a new virtual environment with conda using requirements.yaml
+- Create a new virtual environment with conda using ImageClassification.yaml
 - Conda install jupyter (ignore if already installed)
 - Create a specific jupyter kernel for the project
 - Open Jupyter Lab / Notebook
