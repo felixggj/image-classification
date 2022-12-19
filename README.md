@@ -1,4 +1,5 @@
 # Image Classification
+*Felix Gomez-Guillamon Jurado*
 
 Deep Learning Image Classification model which detects whether a person is happy or sad by giving a percentage of certainty to its prediction. Used several machine learning libraries such as TensorFlow, Keras and OpenCV. Other libraries such as Matplotlib and Numpy were used to display the model’s performance. 
 
@@ -19,3 +20,4 @@ The Model is able to predict whether a person is sad or happy from any image tha
 - Conda install jupyter (ignore if already installed)
 - Create a specific jupyter kernel for the project
 - Open Jupyter Lab / Notebook
+
