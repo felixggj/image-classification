@@ -1,4 +1,4 @@
-# Image Classification Deep Learning Project with Flask Front-End
+# Full-Stack Image Classification Deep Learning Project with a Flask Front-End
 *Felix Gomez-Guillamon Jurado*
 
 **Model Training can be seen on the file 'ImageClassification .ipynb'**
