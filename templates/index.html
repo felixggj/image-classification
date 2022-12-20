@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+
+    <meta charset='utf-8'> <!-- for unicode characters -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'> <!-- for mobile adaptability --> 
+    <title> Emotional Status Image Classifier</title>
+
+</head>
+
+<body style='background: #09172E;'>
+
+<h2 style='color: #F2F2F2; font-family: 'Courier New', Courier, monospace; font-size: 60px; font-weight: bold; margin-top: 50px; margin-bottom: 50px;'> Emotional Status Image Classifier </h2>
+<h4 style="color: #F2F2F2; font-family: 'Courier New', Courier, monospace; font-size: 25px; font-weight: bold; margin-top: 50px; margin-bottom: 25px;"> Upload an image to classify the emotional status of the person in the image </h4>
+
+
+<form action='/' method='post' enctype='multipart/form-data'>
+    <d1>
+    <p style='color: #F2F2F2; font-family: 'Courier New', Courier, monospace; font-size: 40px; font-weight: bold; margin-top: 50px; margin-bottom: 50px;'>
+        <input type='file' name='file' style='margin-top: 50px; margin-bottom: 50px;' autocomplete='off' required>
+    </p>
+    </d1>
+    <p style='color: #F2F2F2; font-family: 'Courier New', Courier, monospace; font-size: 40px; font-weight: bold; margin-top: 50px; margin-bottom: 50px;'>
+        <input type='submit' value='submit' style='margin-top: 50px; margin-bottom: 50px;'>
+    </p>
+</form>
+
+
+<p style= 'color:antiquewhite;'>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <u><h3 style='color:antiquewhite'>{{ messages[0] }}</h3></u><br>
+            <img src='{{ messages[1] }}' style= 'color:antiquewhite; width: 300px; height: 300px; margin-top: 50px; margin-bottom: 50px;'>
+        {% endif %}
+    {% endwith %}
+</p>
+
+</body>
+
+</html>
