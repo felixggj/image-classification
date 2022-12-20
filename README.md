@@ -17,7 +17,9 @@ Some of the functionalities of the Front-End are:
 ##### Google Colab (Using Colab's GPU)
 - Install all neccessary dependencies
 	- Can be found on the 'requirements.yaml' file
+- Upload the 'ImageClassification.ipynb' file to Google Colab
 ##### Local Computer - Silicon ARM Mac (recommended)
+###### For Model Visualization
 - Download <a href="https://docs.conda.io/en/main/miniconda.html">Miniconda</a>
 - Create a new virtual environment with conda using 'requirements.yaml' file
 	- Conda env create -f requirements.yaml
@@ -25,3 +27,14 @@ Some of the functionalities of the Front-End are:
 - Create a specific jupyter kernel for the project for the virtual environment
 	- python -m ipykernel install --user --name=ImageClassification
 - Open Jupyter Lab / Notebook
+
+###### For Front-End Implementation Demo
+- Download <a href="https://docs.conda.io/en/main/miniconda.html">Miniconda</a>
+- Create a new virtual environment with conda using 'requirements.yaml' file
+	- Conda env create -f requirements.yaml
+- Download .zip file of the project
+- Open Terminal and navigate to the project folder
+- Run 'python app.py'
+- Open a browser and go to 'http://127.0.0.1:5000/'
+- Upload an image and click 'submit'
+- The model will predict whether the person is happy or sad and display the percentage of certainty of its prediction
